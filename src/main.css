@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+body
+{
+    margin: 0;
+    padding:0;
+    background:#2e3131;
+
+}
+
+h1
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+
+  .rainbowTitle h1{
+    user-select: none;
+    font-size: 30px;
+    color: white;
+    background: repeating-linear-gradient(-105deg,#EC6EAD 20%, #636FA4,#3494E6, #67B26F,#EC6EAD);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slide 4s linear infinite forwards;
+  }
+  
+  @keyframes slide {
+    0%{
+      background-position-x: 0%;
+    }
+    50%{
+        background-position-x:300vw;
+    }
+    100%{
+      background-position-x: 600vw;
+    }
+  }
+  
