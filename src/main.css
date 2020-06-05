@@ -20,7 +20,7 @@ h1
     color: white;
     background: repeating-linear-gradient(-105deg,#EC6EAD 20%, #636FA4,#3494E6, #67B26F,#EC6EAD);
     background-size: 600vw 600vw;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     background-clip: text;
     animation: slide 4s linear infinite forwards;
   }
@@ -36,4 +36,46 @@ h1
       background-position-x: 600vw;
     }
   }
+  
+  .cube
+  {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  }
+  
+  .cube *
+  {
+      transform-style: preserve-3d;
+  }
+  
+  .cube .shadow
+  {
+      position: absolute;
+      top: -400px;
+      left: -400px;
+      width: 800px;
+      height: 800px;
+      transform: rotateX(-90deg) translateZ(200px);
+      background-image: radial-gradient(closest-side, #000000, #00000000);
+  }
+  
+  .cube .face
+  {
+      position: absolute;
+      top: -200px;
+      left: -200px;
+      width: 400px;
+      height: 400px;
+      background-size:cover;
+      image-rendering: crisp-edges; /*firefox*/
+      image-rendering: pixelated; /*chrome*/
+  }
+  
+  .cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+  .cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+  .cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+  .cube .face.y-neg { transform: rotateX(90deg) translateZ(200px); }
+  .cube .face.z-pos { transform: rotateY(0deg) translateZ(200px); }
+  .cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
   
