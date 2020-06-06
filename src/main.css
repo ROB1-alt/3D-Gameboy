@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
-body
-{
+
+
+body{
     margin: 0;
     padding:0;
     background:#2e3131;
 
 }
+.main *{
+  transform-style: preserve-3d;
+}
 
-h1
-{
+
+h1{
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
 }
 
 
-  .rainbowTitle h1{
+.rainbowTitle h1{
     user-select: none;
     font-size: 30px;
     color: white;
@@ -40,8 +44,6 @@ h1
   .frontFace{
     border-radius: 2% 2% 13% 2%;
     position: absolute;
-    top: 17%;
-    left:41%;
     background: #d0cfca;
     width: 400px;
     height: 700px;
@@ -57,11 +59,30 @@ h1
     height: 240px;
   }
 
+  .roundBtn1{
+    background: #58012e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .roundBtn2{
+    background: #58012e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
   .rightFace{
-    background: #000;
-    width: 60px;
+    background: #d0cfca;
+    width: 90px;
+    height: 700px;
+  }
+  .leftFace{
+    background: #d0cfca;
+    width: 90px;
     height: 700px;
   }
 
-  .gameBoy .frontFace{transform: rotateY(10deg) translateZ(200px)}
-  .gameBoy .rightFace{transform: rotateY(60deg) translateZ(900px)}
+  .gameBoy .frontFace{transform: rotateY(90deg) translateZ(200px)}
+  .gameBoy .rightFace {transform: translateZ(200px) translateX(311px); }
+  .gameBoy .leftFace {transform: translateZ(-200px) translateX(311px) translateY(-700px); }
