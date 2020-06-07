@@ -41,6 +41,14 @@ h1{
     }
   }
   
+  .rotate{
+    transition: rotate 1s;
+
+  }
+  div:hover .rotate{
+    rotate: 1 -0.5 1 180deg;
+  }
+
   .frontFace{
     border-radius: 2% 2% 13% 2%;
     position: absolute;
@@ -60,12 +68,18 @@ h1{
   }
 
   .roundBtn1{
+    position: absolute;
+    top: 400px;
+    left: 300px;
     background: #58012e;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+
   }
   .roundBtn2{
+    top: 400px;
+    left: 300px;
     background: #58012e;
     width: 40px;
     height: 40px;
@@ -82,7 +96,19 @@ h1{
     width: 90px;
     height: 700px;
   }
+  .frontFace{
+    background: #d0cfca;
+    width: 400px;
+    height: 700px;
+  }
+
+  .behindFace{
+    background: #d0cfca;
+    width: 404px;
+    height: 700px;
+  }
 
   .gameBoy .frontFace{transform: rotateY(90deg) translateZ(200px)}
   .gameBoy .rightFace {transform: translateZ(200px) translateX(311px); }
   .gameBoy .leftFace {transform: translateZ(-200px) translateX(311px) translateY(-700px); }
+  .gameBoy .behindFace{transform: rotateY(90deg) translateZ(110px) translateX(-1px) translateY(-1400px)}
