@@ -41,16 +41,13 @@ h1{
     }
   }
   
-  .rotate{
-    transition: rotate 1s;
-
-  }
-  div:hover .rotate{
-    rotate: 1 -0.5 1 180deg;
-  }
+.gif{
+  max-width: 370px;
+}
 
   .frontFace{
-    border-radius: 2% 2% 13% 2%;
+    border: solid 6px;
+    border-radius: 2% 2% 2% 2%;
     position: absolute;
     background: #d0cfca;
     width: 400px;
@@ -58,16 +55,18 @@ h1{
   }
 
   .aroundScreen{
+    border: solid 6px;
     border-radius: 3%;
     position: absolute;
     top:6%;
-    left:9%;
+    left:7%;
     background:#2c3303;
     width: 330px;
     height: 240px;
   }
 
   .roundBtn1{
+    border: solid 6px;
     position: absolute;
     top: 400px;
     left: 300px;
@@ -78,37 +77,85 @@ h1{
 
   }
   .roundBtn2{
-    top: 400px;
-    left: 300px;
+    border: solid 6px;
+    position: absolute;
+    top: 420px;
+    left: 240px;
     background: #58012e;
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
 
+  .verticalBtn{
+    border: solid 1px;
+    position: absolute;
+    top: 420px;
+    left: 70px;
+    background: #000;
+    width: 30px;
+    height: 110px;
+  }
+
+  .horizontalBtn{
+    border: solid 1px;
+    position: absolute;
+    top: 420px;
+    left: 70px;
+    background: #000;
+    width: 30px;
+    height: 110px;
+    transform: rotate(90deg);
+  }
+
   .rightFace{
+    border-radius: 2% 2% 2% 2%;
     background: #d0cfca;
     width: 90px;
     height: 700px;
   }
   .leftFace{
+    border-radius: 2% 2% 2% 2%;
     background: #d0cfca;
     width: 90px;
     height: 700px;
   }
   .frontFace{
+    border-radius: 2% 2% 2% 2%;
     background: #d0cfca;
     width: 400px;
     height: 700px;
   }
 
   .behindFace{
+    border: solid 6px;
+    border-radius: 2% 2% 2% 2%;
     background: #d0cfca;
     width: 404px;
     height: 700px;
+  }
+
+  .topFace{
+    border: solid 6px;
+    border-radius: 2% 2% 2% 2%;
+    background: #d0cfca;
+    width: 380px;
+    height: 90px;
+
+  }
+
+  .bottomFace{
+    border: solid 6px;
+    border-radius: 2% 2% 2% 2%;
+    background: #d0cfca;
+    width: 380px;
+    height: 90px;
+
   }
 
   .gameBoy .frontFace{transform: rotateY(90deg) translateZ(200px)}
   .gameBoy .rightFace {transform: translateZ(200px) translateX(311px); }
   .gameBoy .leftFace {transform: translateZ(-200px) translateX(311px) translateY(-700px); }
   .gameBoy .behindFace{transform: rotateY(90deg) translateZ(110px) translateX(-1px) translateY(-1400px)}
+  .gameBoy .topFace { transform: translateY(-2160px) translateX(163px) translateZ(-2px) rotateX(90deg) rotateZ(90deg);}
+  .gameBoy .bottomFace {transform:translateY(-1560px) translateX(163px) translateZ(-2px) rotateX(90deg) rotateZ(90deg) ;}
